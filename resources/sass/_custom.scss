@@ -1,0 +1,92 @@
+@font-face {
+    font-family: 'Beckman';
+    src: url('../fonts/Beckman.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'Breathe';
+    src: url('../fonts/Breathe.otf') format('opentype');
+}
+
+.breathe-font {
+    font-family: 'Breathe' !important;
+}
+
+body {
+    background-image: url('../images/main-bg.webp');
+    background-size: contain;
+    background-position: center;
+    font-family: 'Beckman';
+    overflow-x: hidden;
+}
+
+body::-webkit-scrollbar {
+    width: 1.3em;
+}
+
+body::-webkit-scrollbar-track {
+    background-color: #000;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #fee905;
+    border-radius: 200px;
+}
+
+#left-shape {
+    width: 0;
+    height: 0;
+    border-top: 21px solid transparent;
+    border-left: 20px solid #E6E6E6;
+    border-bottom: 21px solid transparent;
+}
+
+#right-shape {
+    width: 0;
+    height: 0;
+    border-top: 21px solid transparent;
+    border-right: 20px solid #E6E6E6;
+    border-bottom: 21px solid transparent;
+}
+
+.header-line {
+    background-image: url('../images/header-line.webp');
+    background-repeat: repeat-x;
+    background-position: center;
+    background-size: auto 5px;
+}
+
+.reservation-button, .contact-button {
+    background: linear-gradient(to right, #febf72, #fee905);
+}
+
+.reservation-button:hover, .contact-button:hover {
+    background: linear-gradient(to right, #fee905, #febf72);
+}
+
+.carousel img, .location-image, .contact-image {
+    max-height: 500px !important;
+    object-fit: cover;
+    -o-object-fit: cover;
+}
+
+.section {
+    background-image: url('../images/section-bg.webp');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#taste-of-asia {
+    font-size: 100px;
+}
+
+.gallery-image {
+    width: 200px;
+    height: 400px;
+    object-fit: cover;
+    -o-object-fit: cover;
+}
+
+.menu-title {
+    font-size: 70px;
+}
